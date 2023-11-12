@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><p style="font-weight: bold; font-style: oblique;">ABHINAV RAI</p></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">ABHINAV RAI</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section_pic-container">
+        <img
+          src="./assets/profile_pic.png"
+          alt="Profile Picture"
+          class="profile-pic"
+        />
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title">ABHINAV</h1>
+        <p class="section_text_p2">Full Stack Developer</p>
+        <div class="btn-container">
+          <div
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume.pdf')"
+          >
+            Download CV
+          </div>
+          <div class="btn btn-color-1" onclick="location.href = '#contact'">
+            Contact Info
+          </div>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My Linkedin Profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/abhinav-rai-0b651b259/', '_blank');"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github Profile"
+            class="icon"
+            onclick="window.open('https://github.com', '_blank');"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section_text_p1">Get To Know More</p>
+      <h1 class="title2">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="education">
+              <div class="detail-heading">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h2>Education</h2>
+              </div>
+              <div class="education-details">
+                <div class="college">
+                  <div class="education-detail">
+                    <div class="education-detail-heading">
+                      <h3>B.Tech. in Computer Science Engineering</h3>
+                      <h5>21 - 25</h5>
+                    </div>
+                    <div class="education-detail-details1">
+                      <div class="down-right-symbol">&#10551;</div>
+                      <div class="education-detail-details2">
+                        <h4>DAYANAND SAGAR COLLEGE OF ENGINEERING, BANGLORE</h4>
+                        <p>
+                          &#x2022; Current CGPA : 8.5 <br />
+                          &#x2022; Major in Computer Science Engineering <br />
+                          
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="school">
+                  <div class="education-detail">
+                    <div class="education-detail-heading">
+                      <h3>Senior Secondary Education</h3>
+                      <h5>Apr'19 - Jun'20</h5>
+                    </div>
+                    <div class="education-detail-details1">
+                      <div class="down-right-symbol">&#10551;</div>
+                      <div class="education-detail-details2">
+                        <h4>KV N0 1 AIR FORCE JALAHALLI, BANGLORE</h4>
+                        <p>
+                          &#x2022; Percentage : 92% <br />
+                          &#x2022; Board: Central Board of Secondary Education
+                          <br />
+                          &#x2022; Subjects : English, Physics, Chemistry,
+                          Mathematics,Computer Science
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="experience">
+              <div class="detail-heading">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h2>Experience</h2>
+              </div>
+              <div class="text-container">
+                <p>
+                  As a Full Stack Developer, my portfolio page demonstrates my proficiency in crafting visually
+                  captivating and user-centric websites. Prioritizing clean and responsive design, 
+                  my goal is to deliver flawless user experiences.Explore my projects to witness 
+                  how I transform concepts into reality through coding.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section_text_p1">Explore My</p>
+      <h1 class="title2">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers experience-res">
+          <div class="detail-container">
+            <h2 class="experience-subtitle">Technical Skills</h2>
+            <div class="article-container">
+              <article class="article-container-article">
+                <img src="./assets/java.png" alt="Java icon" class="icon" />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article class="article-container-article">
+                <img
+                  src="./assets/javascript.png"
+                  alt="Javascript icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Javascript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article class="article-container-article">
+                <img
+                  src="./assets/reactjs.png"
+                  alt="Reactjs icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ReactJs</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article class="article-container-article">
+                <img src="./assets/html5.png" alt="HTML icon" class="icon" />
+                <div>
+                  <h3>HTML5</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article class="article-container-article">
+                <img src="./assets/css3.png" alt="CSS icon" class="icon" />
+                <div>
+                  <h3>CSS3</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article class="article-container-article">
+                <img
+                  src="./assets/bootstrap.png"
+                  alt="Bootstrap icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article class="article-container-article">
+                <img src="./assets/nodejs.png" alt="Nodejs icon" class="icon" />
+                <div>
+                  <h3>NodeJs</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article class="article-container-article">
+                <img
+                  src="./assets/expressjs.png"
+                  alt="ExpressJs icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ExpressJs</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article class="article-container-article">
+                <img
+                  src="./assets/mongodb.png"
+                  alt="Mongodb icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Mongodb</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article class="article-container-article">
+                <img src="./assets/php.png" alt="PHP icon" class="icon" />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article class="article-container-article">
+                <img src="./assets/git.png" alt="Git icon" class="icon" />
+                <div>
+                  <h3>Git/Github</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article class="article-container-article">
+                <img src="./assets/vscode.png" alt="vscode icon" class="icon" />
+                <div>
+                  <h3>VS Code</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+         
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+
+    <section id="projects">
+     <p style="text-align: center; font-size: 100px; font-weight: bold; ">PROJECTS</p>
+
+     <div>
+      <div class="project">
+        <img src="./assets/download.png" width=0 alt="Fitness Planner" class="project-img"/>
+        <div>
+        <h3 class="project_title">Fitness Planner</h3>
+        <p class="project_content">Fitness Planner is a web application offering users personalized workout and diet plans with flexibility and customization options. Additionally, users can browse and purchase a variety of supplements.</p>
+      </div>
+      </div>
+     </div>
+
+     <div>
+      <div class="project">
+        <div>
+        <h3 class="project_title">Brain Blitz</h3>
+        <p class="project_content">Brain Blitz is an engaging and interactive web application designed for individuals of all ages who have a passion for both playing and creating quizzes. Brain Blitz offers an exciting platform for users to challenge their knowledge, have fun, and learn new things.</p>
+      </div>
+      <img src="/BrainBlitz.png" width=0 alt="Brain Blitz" class="project-img"/>
+      </div>
+     </div>
+
+     <div>
+      <div class="project">
+        <img src="/SocietyManagement.png" width=0 alt="Society Management Portal" class="project-img"/>
+        <div>
+          <h3 class="project_title">Society Management Portal</h3>
+        <p class="project_content">Society Management Portal is a web application designed to enhance convenience for apartment residents. It offers a range of features aimed at simplifying daily chores and tasks.</p>
+      </div>
+      </div>
+     </div>
+     
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section_text_p1">Get in Touch</p>
+      <h1 class="title2">Contact Me</h1>
+      <div class="contact-info-outer-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:123@gmail.com">raiabhinav427@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Linkedin icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/abhinav-rai-0b651b259/" target="_blank"
+              >Linkedin</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 ABHINAV. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
